@@ -1,6 +1,9 @@
 # How to use Earth Index, an AI tool for finding leads in satellite imagery // Dataharvest 2026
 
+Federico Acosta Rainis - Data editor, Pulitzer Center<br>
+[frainis@pulitzercenter.org](mailto:frainis@pulitzercenter.org)
 
+## What's Earth Index?
 **[Earth Index](https://app.earthindex.ai/)** is a free AI-powered satellite imagery exploration tool created by **[Earth Genome](https://www.earthgenome.org/)**. It lets you mark visual examples and search for similar patterns across large areas. It runs on **Sentinel-2** and it very useful to solve “find a needle in a haystack” problems or map hard-to-map features such as mining, deforestation, land-use changes, and much more. You can learn more about it [here](https://www.earthgenome.org/earth-index#about).
 
 
