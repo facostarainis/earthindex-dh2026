@@ -1,6 +1,9 @@
-# How to use Earth Index, an AI tool for finding leads in satellite imagery
+# How to use Earth Index, an AI tool for finding leads in satellite imagery // Dataharvest 2026
 
+Federico Acosta Rainis - Data editor, Pulitzer Center<br>
+[frainis@pulitzercenter.org](mailto:frainis@pulitzercenter.org)
 
+## What's Earth Index?
 **[Earth Index](https://app.earthindex.ai/)** is a free AI-powered satellite imagery exploration tool created by **[Earth Genome](https://www.earthgenome.org/)**. It lets you mark visual examples and search for similar patterns across large areas. It runs on **Sentinel-2** and it very useful to solve “find a needle in a haystack” problems or map hard-to-map features such as mining, deforestation, land-use changes, and much more. You can learn more about it [here](https://www.earthgenome.org/earth-index#about).
 
 
@@ -186,15 +189,16 @@ Earth Index exports **positive**, **negative**, and **prediction** results toget
 
 Now we will do the process in reverse. Instead of starting by marking tiles manually, we will upload a set of known legal quarries from official Serbian government data and use them as the starting point for the search. Then we will compare the results with a larger quarry dataset to identify locations that may be worth investigating further.
 
-1. Create a **new project** and set the **Area of Interest** to **Serbia**.
-2. In the **Map Layers** panel, click **New Reference Layer** -> **Upload**, and upload the file **`quarries-subset.geojson`**. These are some of the officially recorded quarry locations.
-3. Convert that layer into positive labels by clicking the **three-dot menu** next to the layer and selecting **Convert to positive labels +**.
-4. Run a **Quick Search**.
+1. Download the files **[quarries-subset.geojson](https://raw.githubusercontent.com/facostarainis/earthindex-dh2026/master/quarries-subset.geojson)** and **[quarries-full.geojson](https://raw.githubusercontent.com/facostarainis/earthindex-dh2026/master/quarries-full.geojson)** to your computer (right click, **Save link as** to download them). 
+2. Create a **new project** and set the **Area of Interest** to **Serbia**.
+3. In the **Map Layers** panel, click **New Reference Layer** -> **Upload**, and upload the file **quarries-subset.geojson**. These are some of the officially recorded quarry locations.
+4. Convert that layer into positive labels by clicking the **three-dot menu** next to the layer and selecting **Convert to positive labels +**.
+5. Run a **Quick Search**.
 
 - NOTE: The usual workflow should be to mark ONLY a few examples first and then refine the search with **Deep Search**. We are doing it this way here simply to save time :)
 
 5. Export the results and import them into **Google Earth**.
-6. Also load the file **`quarries-full.geojson`** into **Google Earth**.
+6. Also load the file **quarries-full.geojson** into **Google Earth**.
 7. Look for places where the official quarry points and the Earth Index detections **do not match**. Those mismatches may point to possible quarry sites worth investigating as unregistered or illegal operations.
 
 # Some final tips and recommendations
